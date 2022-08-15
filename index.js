@@ -5,12 +5,14 @@ const {
 
 const books = [
   {
+    id: 1,
     title: "The Awakening",
     author: {
       name: "Kate Chopin"
     }
   },
   {
+    id: 2,
     title: "City of Glass",
     author: {
       name: "Paul Auster"
@@ -20,6 +22,7 @@ const books = [
 
 const typeDefs = gql`
   type Book {
+    id: ID!
     title: String
     author: Author
   }
